@@ -1,0 +1,32 @@
+.verification{ 
+    display: fixed;
+    text-align: center;
+    margin: 0;
+}
+.form-for-verification{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 25%;
+
+}
+.input-verification {
+    height: 35px;
+    border-radius: 20px;
+    border: 1px solid brown;
+    margin-top: 60px;
+    
+}
+.input-verification::placeholder{
+    padding: 15px;
+}
+.btn-verification{
+    margin: 0;
+    width: 100px;
+    height: 45px;
+    background-color: cadetblue;
+    border: 0px;
+    color: azure;
+    margin-top: 20px;
+    cursor: pointer;
+}

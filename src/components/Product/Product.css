@@ -1,0 +1,148 @@
+.subCat{
+    display: grid;
+    flex-direction: column;
+    text-align: center;
+    width: 32%;
+    margin: auto;
+    padding-top: 15%;
+
+}
+.product-container{
+    margin: 10px;
+    background: wheat;
+    border-radius: 10%;
+    text-align: center;
+   
+   
+}
+
+.cartItemImg{
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin-top: 20px;
+}
+.animations-cart-item-img{
+    animation: slide 5s ease-in-out;
+}
+
+.cartItemDetails{
+    display: fixed;
+    padding: 20px 20px;
+}
+.price-weight{
+    display: fixed;
+    margin-top: 15px;
+}
+
+.buttonsCart{
+    display: fixed;
+    
+}
+.button-cart1{
+    width: 70%; 
+    height: 40px; 
+    border: none; 
+    text-decoration: none; 
+    border-radius: 10px; 
+    transition: 0.4s;
+}
+.button-cart2{
+    width: 70%; 
+    height: 40px; 
+    border: none; 
+    text-decoration: none; 
+    border-radius: 10px; 
+    transition: 0.4s;
+}
+
+.button-cart1:hover{
+    animation: shake1 0.3s;
+}
+@keyframes shake1{
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-10px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(10px);
+    }
+}
+.button-cart2:hover{
+    animation: shake2 0.3s;
+}
+@keyframes shake2{
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    75%{
+        transform: translateY(10px);
+    }
+}
+@keyframes slide{
+    0%{
+        opacity: 0.9;
+        rotate: -90deg;
+    }
+    20%{
+        opacity: 0.8;
+        rotate: 90deg;
+    }
+    40%{
+        opacity: 0.6;
+        rotate: -90deg;
+    }
+    50%{
+        opacity: 0;
+        
+    }
+    60%{
+        opacity: 1;
+    }
+    65%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    75%{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.drop-down{
+    background-color: green;
+    color: whitesmoke;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 800;
+    font-size: larger;
+    border: 0px;
+    outline: 0px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px){
+    .subCat{
+        padding-top: 70%;
+    }
+}

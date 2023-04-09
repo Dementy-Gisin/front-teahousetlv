@@ -1,0 +1,12 @@
+.map-screen-div{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    .map-screen-div{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+   
+}

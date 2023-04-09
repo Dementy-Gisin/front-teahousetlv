@@ -1,0 +1,28 @@
+.details-screen{
+    padding-top: 20%;
+   
+}
+.details-address-tel{
+    text-align: center;
+    color: rgb(92, 16, 16);
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+    .details-screen{
+        padding-top: 60%;
+       
+    }
+    .details-screen .details-address-tel{
+        top: 15%;
+        left: 15%;
+        position: relative;
+        display: block;
+    }
+    .details-screen .map{
+        top: 15%;
+        left: 15%;
+        position: relative;
+        display: block;
+    }
+}

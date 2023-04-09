@@ -1,0 +1,185 @@
+.my-profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    padding-top: 15%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.name-profile{
+  margin-bottom: 20px;
+  background-image: linear-gradient(
+    -225deg,
+    #8d7f58 0%,
+    #86424a 29%,
+    #773002 67%,
+    #6e6b0a 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 25px;
+}
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+.image-profile-div{
+  margin: auto;
+  width: 450px;
+  height: 450px;
+  margin-left: 200px;
+}
+.profile-image{
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+  padding: 25px;
+}
+.profile-image:hover{
+    border-radius: 0px;
+    cursor: pointer;
+}
+.email-profile-div {
+  margin-top: 45px;
+  margin-bottom: 35px;
+  width: 9.25em;
+  height: 1.15em;
+  font-size: 60px;
+  font-family: sans-serif;
+  position: relative;
+  font-weight: 700;
+}
+
+.email-profile-div div {
+  position: absolute;
+  left: 0;
+  text-transform: uppercase;
+  width: 100%;
+  display: block;
+  text-align:center;
+}
+
+.upper {
+  top: 0;
+  height: 52.5%;
+  color: #fff;
+  overflow: hidden;
+  z-index: 3;
+  animation: moveUp 4.5s ease-in-out infinite;
+  
+}
+
+.lower {
+  bottom: 0;
+  height: 100%;
+  background: linear-gradient(180deg, #6e6b0a 52.5%, #fff 52.5%);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  z-index: 1;
+  animation: moveDown 4.5s ease-in-out infinite;
+}
+
+.inside {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-40%);
+  text-align: center;
+  z-index: 2;
+  font-size: 15px;
+  color: #dc143c;
+}
+
+@keyframes moveUp {
+  0%,
+  100% {
+    top: 0;
+  }
+
+  50%,
+  70% {
+    top: -45px;
+  }
+}
+
+@keyframes moveDown {
+  0%,
+  100% {
+    top: 0;
+  }
+
+  50%,
+  70% {
+    top: 30px;
+  }
+}
+
+@media (max-width: 424px) {
+  .container {
+    font-size: 2.5rem;
+    
+  }
+
+  .inside {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    font-size: 2rem;
+    
+  }
+
+  .inside {
+    font-size: 0.5rem;
+  }
+}
+.none-visible{
+  z-index: 0;
+}
+.update-btn{
+  width: 300px;
+  height: 60px;
+  margin: auto;
+  background-color:#86424a;
+  border: 4px solid brown;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.update-btn:hover{
+  border: 0px;
+}
+@media screen and (max-width: 768px) {
+  .my-profile{
+    padding-top: 45%;
+  }
+  .image-profile-div{
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    margin-left: 60px;
+  }
+  .profile-image{
+    width: 170px;
+    height: 170px;
+    border-radius: 100%;
+    padding: 10px;
+  }
+  .profile-image:hover{
+      border-radius: 0px;
+      cursor: pointer;
+  }
+}

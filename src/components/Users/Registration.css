@@ -1,0 +1,229 @@
+.for-background{
+    padding-top: 10%;
+    min-height: 80vh;
+    background-image: url('../../logos/logoBej.png');
+    background-size: cover;
+    background-position: center; 
+}
+.main-form-inputs{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    background-color: #2e4f24;
+    
+}
+.main-form-inputs:hover{
+    opacity: 0.8;
+}
+.box-container{
+    
+    width: 60%; 
+    display: flex; 
+    flex-direction: column; 
+    border-radius: 20px; 
+    background-color: #367c2b;
+    box-shadow: 0 0 2px rgba(15, 15, 0, 0.28); 
+    position: relative; 
+    overflow: hidden;
+
+}
+.top-container{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 1.8em;
+    padding-bottom: 5em;
+}
+.back-drop{
+    width: 180%;       
+    /* 160 */
+    height: 140%;
+    position: absolute;
+    display: flex;
+   
+    border-radius: 50%;
+    transform: rotate(60deg);
+    top: -70%;
+    left: -5%;
+    background: #FFFAF0;
+    background: linear-gradient(
+    58deg,
+    rgba(241, 196, 15,1) 20%
+    rgba(243, 172, 18,1) 100%
+    );
+}
+.header-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.header-text{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: whitesmoke;
+}
+.small-text{
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 12px;
+    z-index: 10;
+    margin: 0;
+    margin-top: 8px;
+}
+.inner-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  
+}
+.box-container2{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.form-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.input{
+    width: 40%;
+    height: 25px;
+    outline: none;
+    border: 1px solid rgba(200,200,200,0.0.3);
+    padding: 0px 40px;
+    border-bottom: 1.2px solid transparent;
+    transition: all 200ms ease-in-out;
+    font-size: 12px;
+    border-radius: 10px;
+    background: #FFFAF0;
+    /* margin-bottom: 5px; */
+    padding-left: 5px; 
+
+}
+.input::placeholder{
+    color: rgba(200,200,200,1);
+    text-align: start;
+    font-size: larger;
+}
+.input:not(:last-of-type){
+    border-bottom: 1.5px solid rgba(200,200,200, 0.4);
+}
+.input:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(241,196,15);
+}
+.btn-input{
+    width: 100%;
+    padding: 11px 40%;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all, 240ms ease-in-out;
+    background: #c8ad7f;
+    background: linear-gradient(
+    58deg,
+    rgba(241, 196, 15,1) 20%
+    rgba(243, 172, 18,1) 100%
+    );
+}
+.btn-input:hover{
+    filter: brightness(1.03);
+}
+.link-forget-password{
+    font-size: 12px;
+    color: rgba(200,200,200,0.8);
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.bolded-link{
+    font-size: 13px;
+    color: rgb(241, 196, 15);
+    font-weight: 500;
+    text-decoration: none;
+    list-style-type: none;
+}
+.hide{
+    height: 25px;
+    visibility: hidden;
+    /* margin-bottom: 5px; */
+    border: 0;
+}
+.hide::placeholder{
+    color: #fff;
+}
+.social-registration{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+@media screen and (max-width: 768px) {
+    .for-background{
+        padding-top: 40%;
+        min-height: 45vh;
+        background-image: url('../../logos/logoBej.png');
+        background-size: cover;
+        background-position: center; 
+    }
+    .back-drop{
+        width: 200%;       
+        /* 160 */
+        height: 120%;
+        position: absolute;
+        display: flex;
+   
+        border-radius: 50%;
+        transform: rotate(60deg);
+        top: -90%;
+        left: -5%;
+        background: #FFFAF0;
+        background: linear-gradient(
+        58deg,
+        rgba(241, 196, 15,1) 20%
+        rgba(243, 172, 18,1) 100%
+        );
+    }
+    .form-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .input{
+        width: 70%;
+        height: 20px;
+        outline: none;
+        border: 1px solid rgba(200,200,200,0.0.3);
+        padding: 0px 40px;
+        border-bottom: 1.2px solid transparent;
+        transition: all 200ms ease-in-out;
+        font-size: 12px;
+        border-radius: 10px;
+        background: #FFFAF0;
+        /* margin-bottom: 5px; */
+        padding-left: 5px; 
+    
+    }
+    .header-text{
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1;
+        color: whitesmoke;
+    }
+}

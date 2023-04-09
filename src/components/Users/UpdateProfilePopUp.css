@@ -1,0 +1,152 @@
+.pop-up{
+    position: fixed;
+    top: 25%;
+    left: 22.5%;
+    width: 55%;
+    height: 60vh;
+    background-color: darkcyan;
+    border: 3px solid white;
+    opacity: 0.9;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    
+}
+.pop-up:hover{
+    border: 3px solid firebrick;
+    opacity: 1;
+}
+.pop-up-inner{
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+    max-width: 650px;
+}
+
+.close-button{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    color: white;
+    background-color: burlywood;
+    border: none;
+    cursor: pointer;
+}
+.update-details{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding-top: 15px;
+    color: azure;
+
+}
+.update-details .input-update-details{
+    height: 25px;
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+}
+.input-update-details{
+    padding-left: 3px;
+}
+.input-update-details::placeholder{
+    color: darkgreen;
+    font-size: larger;
+    
+}
+.update-details-btn{
+    width: 180px;
+    height: 25px;
+    background-color: brown;
+    border: 0px;
+    text-align: center;
+    color: aliceblue;
+    margin: auto;
+    cursor: pointer;
+}
+.upload-photo-div{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    color: azure;
+    /* margin: 0; */
+}
+
+.upload-photo-div p{
+    text-decoration:underline;
+    margin-bottom: 10px;
+}
+.cam-upload-photo{
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.upload-photo-button{
+    width: 220px;
+    height: 35px;
+    background-color:royalblue;
+    border: 0px;
+    text-align: center;
+    color: aliceblue;
+    margin: auto;
+    cursor: pointer;
+}
+.input-upload-photo{
+    display: none;
+}
+.input-upload-photo[type='file']{
+    color: transparent;
+}
+.update-password-div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    color: azure;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.update-password-div button{
+    margin-top: 10px;
+}
+.input-password{
+    padding-left: 3px;
+    outline: none;
+    height: 25px;
+    width: 90%;
+    border-radius: 10px;
+    margin: auto;
+}
+.input-password::placeholder{
+    font-size: larger;
+    color: darkgreen;
+}
+.update-password-btn{
+    width: 180px;
+    height: 25px;
+    margin: auto;
+    background-color: black;
+    color: whitesmoke;
+}
+.delete-profile-btn{
+    color: azure;
+    background-color: rgb(192, 2, 2);
+    border: 0px;
+    cursor: pointer;
+    height: 25px;
+    width: 120px;
+}
+@media screen and (max-width: 768px){
+    .pop-up{
+        margin-top: 20%;
+        width: 70%;
+        height: 70vh;
+    }
+}
