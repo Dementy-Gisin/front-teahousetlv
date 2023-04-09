@@ -109,7 +109,7 @@ function Registration() {
           Accept: 'application/json'
       }
     }
-      console.log(response);
+      console.log(response?.tokenId);
       await axios.post('https://myteahousetlv.herokuapp.com/api/user/google-login', {
         token: response.tokenId
       }, config).then(res => {
