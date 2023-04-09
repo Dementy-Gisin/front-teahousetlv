@@ -111,7 +111,7 @@ function Registration() {
     }
       console.log(response);
       await axios.post('https://myteahousetlv.herokuapp.com/api/user/google-login', {
-        token: response.accessToken
+        token: response.tokenId
       }, config).then(res => {
        
          if(res.status === 200){
